@@ -77,6 +77,20 @@ http://localhost:8000/docs
 
 ```
 
+# 🔎 Model Verification (Live Demo)
+
+The deployed model was verified via the FastAPI interactive interface (Swagger UI).
+
+✅ Service health check
+The /health endpoint confirms that the model artifacts are loaded correctly and the inference contract is initialized.
+
+✅ Model inference
+The /predict endpoint successfully returns the probability of operational tolerance for a valid input payload.
+The same behavior is observed both in local execution and inside the Docker container.
+
+
+
+
 # 🐳 Docker
 
 The application is fully containerized.
