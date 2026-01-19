@@ -38,6 +38,24 @@ Genome-wide gene expression
 
 Top-500 genes selected on training data only
 
+## 🔬 Research & Exploratory Analysis
+
+The full research workflow is available in the Jupyter notebook  
+[`notebook_OT.ipynb`](notebook_OT.ipynb).
+
+It contains:
+
+- detailed exploratory data analysis (EDA)
+- data quality checks and visualizations
+- leakage-safe train/test splitting
+- feature selection for high-dimensional transcriptomic data
+- comparison of multiple models
+- hyperparameter tuning
+- model evaluation and interpretation
+
+The notebook documents the complete end-to-end analytical process that led to the final production model.
+
+
 # 🧠 Modeling
 
 Models evaluated:
