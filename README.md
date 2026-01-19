@@ -84,10 +84,16 @@ The deployed model was verified via the FastAPI interactive interface (Swagger U
 ✅ Service health check
 The /health endpoint confirms that the model artifacts are loaded correctly and the inference contract is initialized.
 
+![4DA534F8-2FCF-4C06-9C9A-AB5AD908210B](https://github.com/user-attachments/assets/a704ae52-c87d-4404-9b0f-2b190febc74a)
+![9055BE37-0F34-49AB-B838-36DA7113B105](https://github.com/user-attachments/assets/499e86d9-94ed-467f-9217-6d605cb9225a)
+
+
+
 ✅ Model inference
 The /predict endpoint successfully returns the probability of operational tolerance for a valid input payload.
 The same behavior is observed both in local execution and inside the Docker container.
 
+![81B26162-B1AB-48F0-8A3F-CB745BBFF3F3](https://github.com/user-attachments/assets/6ee95a84-50ca-49de-aee7-b42e6825fd44)
 
 
 
@@ -101,6 +107,11 @@ docker run --rm -p 8000:8000 ot-api
 
 ```
 The API behaves identically inside and outside the container. 
+
+![C2C71BCB-2A3F-4986-A5C5-5506A2ADD2BE](https://github.com/user-attachments/assets/5aad2a38-dedf-49a4-b58d-1dd9e54c1117)
+
+![25B6EEF9-1398-4D16-ACBE-27F0C61B19B3](https://github.com/user-attachments/assets/7d6301fe-1901-4c33-9abe-6c117b0a0e70)
+
 
 # 🧪 Testing
 
