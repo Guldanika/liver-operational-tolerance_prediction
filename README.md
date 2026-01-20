@@ -10,7 +10,7 @@ This project implements a production-grade machine learning system that predicts
 
 Unlike a notebook-only solution, the model is deployed as a containerized FastAPI service with a fixed inference contract, automated tests, and reproducible environment.
 
-🎯 Problem
+# 🎯 Problem
 
 Long-term immunosuppressive therapy after liver transplantation causes severe complications.
 However, a subset of patients can safely discontinue immunosuppression (operational tolerance).
