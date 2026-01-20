@@ -106,14 +106,11 @@ The /health endpoint confirms that the model artifacts are loaded correctly and 
 ![9055BE37-0F34-49AB-B838-36DA7113B105](https://github.com/user-attachments/assets/499e86d9-94ed-467f-9217-6d605cb9225a)
 
 
-
 ✅ Model inference
 The /predict endpoint successfully returns the probability of operational tolerance for a valid input payload.
 The same behavior is observed both in local execution and inside the Docker container.
 
 ![81B26162-B1AB-48F0-8A3F-CB745BBFF3F3](https://github.com/user-attachments/assets/6ee95a84-50ca-49de-aee7-b42e6825fd44)
-
-
 
 # 🐳 Docker
 
@@ -147,8 +144,9 @@ pytest
 - Versioned artifacts
 - Docker-based environment isolation
 
-## Cloud Deployment
+## Cloud Deployment (RENDER)
 
+The FastAPI inference service is containerized using Docker. 
 The model is deployed as a FastAPI web service on Render.
 
 - Base URL:  
@@ -157,6 +155,9 @@ The model is deployed as a FastAPI web service on Render.
 - Swagger UI:  
   https://liver-operational-tolerance-prediction.onrender.com/docs
 
+  🎥 **Cloud Deployment of an ML API on Render (FastAPI + Docker)**  
+https://youtu.be/z6xz7P-5fgY
+
 - Health check:
   
   ```
@@ -164,6 +165,9 @@ The model is deployed as a FastAPI web service on Render.
   ```
 The service loads a trained LightGBM model and exposes a REST API
 for operational tolerance risk prediction based on gene expression features.
+
+The deployment exposes a public API endpoint and an interactive Swagger UI
+for testing the model in production-like conditions.
 
 # Project STRUCTURE
 
