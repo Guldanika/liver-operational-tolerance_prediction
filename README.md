@@ -147,9 +147,30 @@ pytest
 - Versioned artifacts
 - Docker-based environment isolation
 
-# Project STRUCTURE 
-```
-liver-tolerance-prediction/
+## Cloud Deployment
+
+The model is deployed as a FastAPI web service on Render.
+
+- Base URL:  
+  https://liver-operational-tolerance-prediction.onrender.com
+
+- Swagger UI:  
+  https://liver-operational-tolerance-prediction.onrender.com/docs
+
+- Health check:
+  
+  ```
+  curl https://liver-operational-tolerance-prediction.onrender.com/health
+  ```
+The service loads a trained LightGBM model and exposes a REST API
+for operational tolerance risk prediction based on gene expression features.
+
+# Project STRUCTURE
+
+## Project Structure
+
+```text
+liver-operational-tolerance-prediction/
 ├── app.py
 ├── train_model.py
 ├── predict.py
@@ -161,6 +182,7 @@ liver-tolerance-prediction/
 │   └── OT_top500_genes.csv
 └── tests/
 ```
+
 
 # ⚠️ Limitations & Future Work
 
