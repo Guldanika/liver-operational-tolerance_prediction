@@ -198,7 +198,7 @@ liver-operational-tolerance-prediction/
 
 - External validation
 -Model explainability (SHAP)
-- Cloud deployment (public endpoint)
+
 
 # ✅ Highlights
 
